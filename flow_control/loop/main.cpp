@@ -31,15 +31,61 @@ int main()
 
   // int scores[10];
   // double scores[5]{12.7, 7.5, 13.2, 13.1, 10.4};
-  int scores[]{1, 3, 4, 5, 6};
+  // int scores[]{1, 3, 4, 5, 6};
 
-  while (j < COUNT)
+  // while (j < COUNT)
+  // {
+  //   // scores[j] = j;
+  //   std::cout << "scores: " << scores[j] << std::endl;
+  //   j++;
+  // }
+
+  // std::cout << "scores: " << scores[11] << std::endl;
+
+  // int scores[]{1, 3, 4, 5, 2, 3};
+
+  // for (auto score : scores)
+  // {
+  //   std::cout << "score: " << score << std::endl;
+  // }
+
+  // const int scores[]{1, 3, 4, 5, 2, 3};
+  // scores[2] = 8;
+  // main.cpp:53:13: error: assignment of read-only location 'scores[2]'
+  //  53 |   scores[2] = 8;
+
+  // int scores[]{1, 3, 4, 5, 2, 3};
+  // int sum{0};
+
+  // for (int score : scores)
+  // {
+  //   sum += score;
+  // }
+  // std::cout << "sum: " << sum << std::endl;
+
+  // std::cout << "scores size: " << std::size(scores) << std::endl;
+
+  // for (size_t i{0}; i < std::size(scores); i++)
+  // {
+  //   std::cout << "scores[" << i << "]: " << scores[i] << std::endl;
+  // }
+
+  char message[6]{'H', 'e', 'l', 'l', 'o', '\0'};
+
+  for (auto c : message)
   {
-    // scores[j] = j;
-    std::cout << "scores: " << scores[j] << std::endl;
-    j++;
+    std::cout << c;
   }
+  std::cout << std::endl;
 
-  std::cout << "scores: " << scores[11] << std::endl;
+  std::cout << "message: " << message << std::endl;
+
+  char message4[]{"Hello"};
+  std::cout << "message4: " << message4 << std::endl;
+
+  int numbers[]{1, 2, 3, 4, 5};
+  std::cout << "numbers: " << numbers << std::endl;
+  // numbers: 0x16fccb0b0
+
   return 0;
 }
